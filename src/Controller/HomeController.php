@@ -17,4 +17,40 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+        /**
+     * @Route("/apropos", name="app_apropos")
+     */
+    public function apropos() 
+    {
+        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+    }
+        /**
+     * @Route("/ventes", name="app_ventes")
+     */
+    public function ventes() 
+    {
+        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+    }
+        /**
+     * @Route("/locations", name="app_locations")
+     */
+    public function locations() 
+    {
+        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+    }
+        /**
+     * @Route("/test", name="app_test")
+     */
+    public function test() 
+    {
+        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+    }
+        /**
+     * @Route("/nousContacter", name="app_nousContacter")
+     */
+    public function nousContacter() 
+    {
+        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+    }
+
 }
