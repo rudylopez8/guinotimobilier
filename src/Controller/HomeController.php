@@ -25,13 +25,64 @@ class HomeController extends AbstractController
         return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
     }
         /**
+     * @Route("/abonnements", name="app_abonnements")
+     */
+    public function abonnements() 
+    {
+        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+    }
+    /**
      * @Route("/ventes", name="app_ventes")
      */
     public function ventes() 
     {
-        return new Response("ABOUT US / PAGE UNDERCONSTRUCTION");
+        return $this->render('home/ventes.html.twig', [
+        ]);
+    }
+    /**
+     * @Route("/locations", name="app_locations")
+     */
+    public function location() 
+    {
+        return $this->render('home/locations.html.twig', [
+        ]);
+    }
+
+
+    /**
+     * @Route("/terrains", name="app_terrains")
+     */
+    public function terrains() 
+    {
+        return $this->render('location/terrains.html.twig', [
+        ]);
     }
         /**
+     * @Route("/appartements", name="app_appartements")
+     */
+    public function appartements() 
+    {
+        return $this->render('location/appartements.html.twig', [
+        ]);
+    }
+        /**
+     * @Route("/maisons", name="app_maisons")
+     */
+    public function maisons() 
+    {
+        return $this->render('location/maisons.html.twig', [
+        ]);
+    }
+        /**
+     * @Route("/hotels", name="app_hotels")
+     */
+    public function hotels() 
+    {
+        return $this->render('location/hotels.html.twig', [
+        ]);
+    }
+
+    /**
      * @Route("/locations", name="app_locations")
      */
     public function locations() 
